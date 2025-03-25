@@ -1,0 +1,28 @@
+Package: lmPrettyPlots
+Type: Package
+Title: Makes Pretty Versions of lm Regression Diagnostic Plots
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Helen", "Greatrex",
+      email = "hgreatrex@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Provides visually appealing residual diagnostic plots for linear models.
+    The primary function generates studentized residual plots to assess model assumptions, 
+    detect outliers, and evaluate linearity. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ggplot2,
+    dplyr,
+    stats
+Suggests: 
+    hrbrthemes,
+    olsrr,
+    yarrr,
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
