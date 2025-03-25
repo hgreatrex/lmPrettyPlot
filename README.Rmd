@@ -1,21 +1,21 @@
+---
+output: github_document
+---
 
 # lmPrettyPlot
-
 Tiny R package for nice regression plots
 
 ## Installation
+Version 0.1 of this package is currently available here on GitHub and may be installed by:
 
-Version 0.1 of this package is currently available here on GitHub and
-may be installed by:
-
-``` r
+```{r, eval=FALSE}
 library(remotes)
 install_github("hgreatrex/lmPrettyPlot")
 ```
 
 Or by using
 
-``` r
+```{r, eval=FALSE}
 library(devtools)
 install_github("hgreatrex/lmPrettyPlot")
 ```
@@ -26,11 +26,9 @@ install_github("hgreatrex/lmPrettyPlot")
 
 #### Example 1: Using the built-in mtcars dataset
 
-``` r
+```{r, message=FALSE}
 library(lmPrettyPlots)
 data(mtcars)
 model_mtcars <- lm(mpg ~ wt, data = mtcars)
 lmplot_student_fits(model_mtcars)
 ```
-
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
